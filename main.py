@@ -48,7 +48,6 @@ def csv_file(result):
 
     with open(date_today + ".csv", 'a', encoding='utf-8', newline='') as output_file:
         writer = csv.writer(output_file, lineterminator='\r')
-        writer.writerow(['Name', 'Description', 'URL', 'Language', 'Date'])
         writer.writerow(result)
 
 
